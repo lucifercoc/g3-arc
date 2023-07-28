@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+border-radius: 8px;
+font-size: 1.25rem;
+font-weight: 600;
+cursor: grab;
+background-color: #FF900E;
+text-align: center;
+padding: 20px 25px;
+color: #fff;
+border: 0;
+
+}
+
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+} 
+.nav-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div > ul{
+    display: flex;
+}
+
+div li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+}
+li a{
+    text-decoration: none;
+    color: #424242;
+}
+.banner-container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-des{
+    color: #424242;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+ nav{
+    flex-direction: column;
+
+ }   
+ .banner-container{
+    max-width: 600px;
+ }
+
+}
+
+/* Tab device */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+   header{
+    padding: 40px;
+   } 
+}
+
+/* main stye */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.teams-container{
+display: flex;
+align-items: center;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+
+}
+.quick{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.our{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
